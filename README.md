@@ -97,7 +97,7 @@ The ProtonVPN GUI is currently still an <u>experimental interface</u>. It requir
 | **Distro**                              | **Command**                                                                                                     |
 |:----------------------------------------|:----------------------------------------------------------------------------------------------------------------|
 |Fedora/CentOS/RHEL                       | `sudo dnf install -y libappindicator-gtk3 libnotify`                                                                      |
-|Ubuntu/Linux Mint/Debian and derivatives | `sudo apt install -y gir1.2-appindicator3 libnotify-bin`                                                                       |
+|Ubuntu/Linux Mint/Debian and derivatives | `sudo apt install -y gir1.2-appindicator3-0.1 libnotify-bin`                                                                       |
 |OpenSUSE/SLES                            | `sudo zypper install libappindicator-gtk3 libnotify`                                                                      |
 |Arch Linux/Manjaro                       | `sudo pacman -S libappindicator-gtk3 libnotify`                                                                           |
 
@@ -243,7 +243,7 @@ To create at <i>tray icon</i> launcher with a .desktop file, follow the instruct
 At the moment, since the CLI protects certain files using sudo and also manages killswitch and split tunneling, the GUI will also need to have access to these sudo protected files. Thus, as it is at the moment, the GUI needs to have certain root privileges. This though is subject to change. 
 Nonetheless, if you would like to launch the GUI without having to type in your sudo password everytime, then you could add the executable file to `visudo`. 
 <br>
-Another alternative is enable PolKit Support from within the settings (`pkexec` command). This displays a window for the user to type the sudo password, this way, a user won't have to type the password into the terminal. Whenever you want to connect/disconnect or make some important changes to files, a window prompt will appear for you to enter the sudo password.
+Another alternative is enable PolKit Support from within the settings (`pkexec` command). This displays a window for the user to type the sudo password, this way, a user won't have to type the password into the terminal. Whenever you want to connect/discogir1.2-appindicator3-0.1nnect or make some important changes to files, a window prompt will appear for you to enter the sudo password.
 <br>
 **Note:** This feature needs to be enabled from within the GUI settings for it to be able to work. If you have not installed the necessary packages, then the this feature will not work.
 
